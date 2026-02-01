@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/helloworld_Qt/">
-    <file alias="resource/images/README.txt">D:/Qt/Work/helloworld_Qt/resource/images/README.txt</file>
-    <file alias="resource/images/backspace.svg">D:/Qt/Work/helloworld_Qt/resource/images/backspace.svg</file>
-  </qresource>
-</RCC>
-

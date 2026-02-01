@@ -1,9 +1,0 @@
-module helloworld_Qt
-typeinfo apphelloworld_Qt.qmltypes
-prefer :/helloworld_Qt/
-Main 1.0 Main.qml
-CalcButton 1.0 UI_components/CalcButton.qml
-HistoryPanel 1.0 UI_components/HistoryPanel.qml
-Display 1.0 UI_components/Display.qml
-depends QtQuick
-
