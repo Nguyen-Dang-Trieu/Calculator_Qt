@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/helloworld_Qt/">
+    <file alias="Main.qml">D:/Qt/Work/helloworld_Qt/Main.qml</file>
+    <file alias="UI_components/CalcButton.qml">D:/Qt/Work/helloworld_Qt/UI_components/CalcButton.qml</file>
+    <file alias="UI_components/HistoryPanel.qml">D:/Qt/Work/helloworld_Qt/UI_components/HistoryPanel.qml</file>
+    <file alias="UI_components/Display.qml">D:/Qt/Work/helloworld_Qt/UI_components/Display.qml</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,16 @@
+-I
+D:/Qt/Work/helloworld_Qt/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug
+-I
+D:/Qt/Work/helloworld_Qt/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/helloworld_Qt
+-I
+D:/Qt/Work/helloworld_Qt/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug
+-I
+C:/Qt/6.10.2/mingw_64/qml
+--resource
+D:/Qt/Work/helloworld_Qt/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qt/rcc/qmake_helloworld_Qt.qrc
+--resource
+D:/Qt/Work/helloworld_Qt/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qt/rcc/apphelloworld_Qt_raw_qml_0.qrc
+--resource
+D:/Qt/Work/helloworld_Qt/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qt/rcc/apphelloworld_Qt_raw_res_0.qrc
+--module
+helloworld_Qt
