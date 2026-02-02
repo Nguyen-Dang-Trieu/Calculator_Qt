@@ -1,5 +1,5 @@
 # Calculator Pro
-Calculator Pro là một ứng dụng máy tính hiện đại được xây dựng bằng framework Qt 6, kết hợp sức mạnh xử lý logic của C++ và giao diện linh hoạt của QML. Ứng dụng hỗ trợ lưu trữ lịch sử tính toán thời gian thực bằng cơ sở dữ liệu SQLite.
+Calculator Pro là ứng dụng máy tính hiện đại được xây dựng trên framework **Qt 6**, kết hợp logic mạnh mẽ của **C++** và giao diện linh hoạt từ **QML**. Ứng dụng tích hợp cơ sở dữ liệu **SQLite** để lưu trữ lịch sử tính toán trong thời gian thực.
 
 ## Tính năng
 - Tính toán cơ bản.
@@ -22,7 +22,16 @@ Calculator Pro là một ứng dụng máy tính hiện đại được xây d�
 </p>
 
 ## Công nghê
-- Ngôn ngữ: C++, QML
-- Framework: Qt 6.10.2
-- database: sqlite
-- Buildsystem: CMake
+- **Ngôn ngữ:** C++, QML
+- **Framework:** Qt 6.10.2 (Shared Libraries)
+- **Cơ sở dữ liệu:** SQLite
+- **Build System:** CMake
+
+## Trải nghiệm ứng dụng (Demo)
+Người dùng có thể dùng thử ứng dụng ngay mà không cần cài đặt môi trường lập trình:
+1. Vào thư mục `app` của dự án.
+2. Tải file `.rar` về và giải nén.
+3. Chạy file `apphelloworld_Qt.exe` để bắt đầu.
+
+Note:  
+> Đây là dự án đầu tay nên không tránh khỏi sai sót, rất mong nhận được sự góp ý của anh/chị để em hoàn thiện hơn trong tương lai!

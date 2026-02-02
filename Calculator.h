@@ -28,7 +28,7 @@ signals:
 
 private:
     void calculate();
-    QString m_display = "0";      // Giả trị đang hiển thị trên màn hình
+    QString m_display = "0";      // Giá trị đang hiển thị trên màn hình
     QString m_history = "";       // Lưu phép tính
     QString m_previousInput;      // Lưu toán hạng trước khi người dùng bấm toán tử (+, -, *, \)
     QString m_operation;          // Lưu phép toán hiện tại

@@ -2,14 +2,12 @@
 #include "Calculator.h"
 #include "database.h"
 
-
 Calculator::Calculator(QObject *parent) : QObject(parent) {}
 
 void Calculator::handleInput(const QString &buttonText) {
     bool isNumber;
-    buttonText.toDouble(&isNumber); // Thử ép chữ cái thành chữ số
+    buttonText.toDouble(&isNumber);
 
-    // TH: buttonText là số or "."
     if (isNumber || buttonText == ".") {
         if (m_isNewNumber) {
             m_display = buttonText;
@@ -25,6 +23,7 @@ void Calculator::handleInput(const QString &buttonText) {
             m_history = m_display;
         }
         emit historyChanged();
+
     } else if (buttonText == "AC") {
         m_display = "0";
         m_history = "";
@@ -32,6 +31,7 @@ void Calculator::handleInput(const QString &buttonText) {
         m_operation = "";
         m_isNewNumber = true;
         emit historyChanged();
+
     }  else if(buttonText == "del") {
         if (!m_isNewNumber) {
             if (m_display.length() > 1) {
@@ -41,13 +41,13 @@ void Calculator::handleInput(const QString &buttonText) {
                 m_isNewNumber = true;
             }
         }
-
         if (!m_operation.isEmpty()) {
             m_history = m_previousInput + " " + m_operation + " " + m_display;
         } else {
             m_history = m_display;
         }
         emit historyChanged();
+
     } else if(buttonText == "+-") {
         if (m_display == "0") return;
 
@@ -66,6 +66,7 @@ void Calculator::handleInput(const QString &buttonText) {
 
         emit displayChanged();
         emit historyChanged();
+
     } else if (buttonText == "=") {
         if (!m_operation.isEmpty()) {
             m_history = m_previousInput + " " + m_operation + " " + m_display + " =";
@@ -73,6 +74,7 @@ void Calculator::handleInput(const QString &buttonText) {
         }
         calculate();
         m_operation = "";
+
     } else { // Khi buttonText = "+, -, *, /"
         if (!m_operation.isEmpty() && !m_isNewNumber) {
                 calculate();
@@ -119,7 +121,7 @@ QStringList Calculator::getHistoryList() const {
     while (query.next()) {
         QString exp = query.value(0).toString();
         QString res = query.value(1).toString();
-        history.append(exp + " = " + res); // Định dạng hiển thị
+        history.append(exp + " = " + res);
     }
     return history;
 }
