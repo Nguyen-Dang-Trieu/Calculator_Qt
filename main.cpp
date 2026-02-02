@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
         qWarning() << "Could not open database";
     }
 
-
+    // Đăng kí
     qmlRegisterType<Calculator>("com.company.calculator", 1, 0, "Calculator");
 
     QQmlApplicationEngine engine;

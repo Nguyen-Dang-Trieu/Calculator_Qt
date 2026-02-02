@@ -4,8 +4,9 @@ import QtQuick.Layouts
 
 Button {
     id: control
-    // Định nghĩa property để nhận dữ liệu
+
     property string btnModelData: ""
+
     text: btnModelData
 
     Layout.fillWidth: true
@@ -41,4 +42,5 @@ Button {
         border.color: "transparent"
         border.width: 1
     }
+
 }

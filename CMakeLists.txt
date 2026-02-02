@@ -29,6 +29,7 @@ qt_add_qml_module(apphelloworld_Qt
         QML_FILES UI_components/CalcButton.qml
         QML_FILES UI_components/HistoryPanel.qml
         QML_FILES UI_components/Display.qml
+        RESOURCES README.md
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

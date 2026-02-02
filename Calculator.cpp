@@ -112,7 +112,7 @@ void Calculator::calculate() {
 }
 
 
-QStringList Calculator::getHistoryList() {
+QStringList Calculator::getHistoryList() const {
     QStringList history;
     QSqlQuery query("SELECT expression, result FROM history ORDER BY timestamp DESC");
 

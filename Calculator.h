@@ -19,7 +19,7 @@ public:
 
     // Q_INVOKABLE cho phép gọi hàm này từ phía QML
     Q_INVOKABLE void handleInput(const QString &buttonText);
-    Q_INVOKABLE QStringList getHistoryList();
+    Q_INVOKABLE QStringList getHistoryList() const;
     Q_INVOKABLE void clearHistory();
 
 signals:
@@ -28,10 +28,10 @@ signals:
 
 private:
     void calculate();
-    QString m_display = "0"; // Giả trị đang hiển thị trên màn hình
-    QString m_history = ""; // Lưu phép tính
-    QString m_previousInput; // Lưu toán hạng trước khi người dùng bấm toán tử (+, -, *, \)
-    QString m_operation; // Lưu phép toán hiện tại
+    QString m_display = "0";      // Giả trị đang hiển thị trên màn hình
+    QString m_history = "";       // Lưu phép tính
+    QString m_previousInput;      // Lưu toán hạng trước khi người dùng bấm toán tử (+, -, *, \)
+    QString m_operation;          // Lưu phép toán hiện tại
     bool    m_isNewNumber = true; // Xác định user đang nhập số mới hay nối tiếp số cũ
 };
 

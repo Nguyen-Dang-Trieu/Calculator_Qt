@@ -17,7 +17,6 @@ bool DatabaseManager::openDB() {
     if (!m_db.open()) return false;
 
     QSqlQuery query;
-    // Thêm cột thời gian để sắp xếp lịch sử
     return query.exec("CREATE TABLE IF NOT EXISTS history ("
                       "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                       "expression TEXT, "
